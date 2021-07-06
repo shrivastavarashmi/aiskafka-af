@@ -1,0 +1,13 @@
+{
+  "Values": 
+  {
+    "AzureWebJobsStorage": "<STORAGECONNECTIONSTRING>",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "EventHubinKafka": "<CONNECTIONSTRINGEVENTHUBINBOUNDKAFKA>",
+    "EventHuboutKafka": "<CONNECTIONSTRINGEVENTHUBOUTBOUNDKAFKA>",
+    "kafkaBroker": "x.x.x.x:9092",
+    "kafkaInboundTopic": "inbound",
+    "kafkaOutboundTopic": "outbound"
+  },
+  "IsEncrypted": false
+}
