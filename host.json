@@ -7,5 +7,10 @@
                 "excludedTypes": "Request"
             }
         }
-    }
+    },
+    "extensions": {
+        "kafka": {
+          "maxBatchSize": 100
+        }
+      }
 }
