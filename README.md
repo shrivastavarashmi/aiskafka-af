@@ -5,3 +5,11 @@ Azure Function sample with 2 triggers:
 - KafkaTrigger: will be triggered when a message is posted into a Kafka Topic, and will forward the message to an Event Hub
 
 This Azure Function uses the Kafka Extention: https://github.com/Azure/azure-functions-kafka-extension
+
+I've installed Kafka on Windows and Linux, and added some of the commands I've used in the .bat/.sh files.
+On Windows I've used the Offset Explorer 2.1: https://www.kafkatool.com/download.html
+
+## Architecture
+![ais-sync-pattern](docs/images/arch.png)
+
+The architecture uses an Azure Function with 2 triggers, EventHubTrigger and KafkaTrigger. 
