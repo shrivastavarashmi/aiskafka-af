@@ -29,14 +29,13 @@ namespace aiskafka.Function
                 {
                     string messageBody = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
 
-                    // Replace these two lines with your processing logic.
-                    // log.LogInformation($"C# Event Hub trigger function processed a message: {messageBody}");
-                    // await Task.Yield();
+                    log.LogInformation($"C# Event Hub trigger function processed a message: {messageBody}");
+
                     try
                     {
                         var kafkaEvent = new KafkaEventData<string>()
                         {
-                            Value = await new StreamReader(messageBody).ReadToEndAsync(),
+                            Value = messageBody,
                         };
 
                         await outputEvents.AddAsync(kafkaEvent);

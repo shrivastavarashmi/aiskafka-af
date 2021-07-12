@@ -31,9 +31,8 @@ namespace aiskafka.Function
                 {
                     string messageBody = kafkaEvent.Value.ToString();
 
-                    // Replace these two lines with your processing logic.
-                    //log.LogInformation($"C# Event Hub trigger function processed a message: {messageBody}");
-                    //await Task.Yield();
+                    log.LogInformation($"C# Kafka processed a message: {messageBody}");
+
                     try{
                     
                         await outputEvents.AddAsync(JsonConvert.SerializeObject(messageBody));
