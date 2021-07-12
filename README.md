@@ -10,6 +10,6 @@ I've installed Kafka on Windows and Linux, and added some of the commands I've u
 On Windows I've used the Offset Explorer 2.1: https://www.kafkatool.com/download.html
 
 ## Architecture
-![ais-sync-pattern](docs/images/arch.png)
+![ais-sync-pattern](docs/images/arch2.png)
 
 The architecture uses an Azure Function with 2 triggers, EventHubTrigger and KafkaTrigger. 
