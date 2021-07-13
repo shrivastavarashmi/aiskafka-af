@@ -39,6 +39,7 @@ namespace aiskafka.Function
                         };
 
                         await outputEvents.AddAsync(kafkaEvent);
+                        log.LogInformation($"C# Message: {messageBody} delivered to Kafka Topic");
                     }
                     catch (Exception ex)
                     {

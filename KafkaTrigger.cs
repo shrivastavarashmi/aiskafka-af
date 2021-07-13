@@ -36,6 +36,7 @@ namespace aiskafka.Function
                     try{
                     
                         await outputEvents.AddAsync(JsonConvert.SerializeObject(messageBody));
+                        log.LogInformation($"C# Message: {messageBody} delivered to Event Hub");
                     }
                     catch (Exception ex)
                     {
